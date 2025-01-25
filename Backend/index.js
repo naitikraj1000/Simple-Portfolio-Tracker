@@ -8,7 +8,7 @@ import db from './db/db.js'
 
 const app = express();
 dotenv.config();
-console.log(process.env.FRONTEND_URL);
+console.log("FRONTEND URL ",process.env.FRONTEND_URL);
 const corsOptions = {
   origin: process.env.FRONTEND_URL,
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
