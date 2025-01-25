@@ -8,9 +8,9 @@ import db from './db/db.js'
 
 const app = express();
 dotenv.config();
-
+console.log(process.env.FRONTEND_URL);
 const corsOptions = {
-  origin: ['http://localhost:3000','https://simple-portfolio-tracker-u1uvwjvu9-naitikraj1000s-projects.vercel.app/'],
+  origin: process.env.FRONTEND_URL,
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   credentials: true,
 };
