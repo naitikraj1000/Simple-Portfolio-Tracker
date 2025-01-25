@@ -1,0 +1,199 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Courier New", Courier, monospace;
+  background-color: #fafafa;
+  color: #333;
+}
+
+.home-container {
+  margin-top: 0.2vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  padding: 1vw;
+  width: auto;
+  height: auto;
+}
+
+.stock-details {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: auto;
+  height: auto;
+  background-color: #f0f8ff;
+  border: 2px solid #1e90ff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+}
+
+.stock-details-header {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  background-color: #1e90ff;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 1vw 0;
+  border-bottom: 2px solid #4682b4;
+}
+
+.stock-details-data {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  border-bottom: 1px solid #4682b4;
+  background-color: #e6f7ff;
+  align-items: center;
+  padding: 0.5vw 0;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.stock-details-design {
+  flex: 1;
+  color: #2f4f4f;
+  font-family: "Courier New", Courier, monospace;
+  padding: 0.5vw;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.stock-details-portfolios {
+  position: absolute;
+}
+
+.stock-details-design:hover {
+  background-color: #d0e9ff;
+  cursor: pointer;
+}
+
+.stock-live-portfolios {
+  position: absolute;
+  top: 10vh;
+  left: 2vw;
+  border: 1px solid #4682b4;
+  width: calc(100% - 4vw);
+  height: calc(100% - 20vh);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 2px;
+}
+
+.signin-component {
+  position: absolute;
+  top: 25vh;
+  left: 5vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.input-style {
+  border: 1px solid #4682b4;
+  border-radius: 8px;
+  padding: 0.5vw;
+  margin: 0.5vw;
+  position: relative;
+}
+
+.stock-live-purchase {
+  position: absolute;
+  top: 25vh;
+  display: flex;
+  border: 1px solid #4682b4;
+  width: calc(100%);
+  height: auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.stock-live-purchase-cnt {
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.input-box {
+  border: 1px solid #4682b4;
+  border-radius: 8px;
+  padding: 0.5vw;
+  margin: 0.5vw;
+}
+
+.minus {
+  color: rgb(255, 255, 255);
+  width: 4vw;
+  height: 4vh;
+  text-align: center;
+  border: 4px solid #3498db;
+  border-radius: 2px;
+  background-color: #3498db;
+}
+
+.minus :hover {
+  background-color: red;
+  cursor: pointer;
+}
+
+.plus {
+  color: rgb(255, 255, 255);
+  width: 4vw;
+  height: 4vh;
+  text-align: center;
+  border-radius: 4px;
+  border: 1px solid #3498db;
+  background-color: #3498db;
+}
+
+.plus :hover {
+  background-color: red;
+  cursor: pointer;
+}
+
+.input-box::-webkit-inner-spin-button,
+.input-box::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.add-btn {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 0.5vw 1vw;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.buy-btn:hover {
+  background-color: #218838;
+}
+
+.sell-btn {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 0.5vw 1vw;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.sell-btn:hover {
+  background-color: #c82333;
+}

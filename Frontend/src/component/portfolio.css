@@ -1,0 +1,58 @@
+/* Portfolio Container */
+.portfolio {
+  margin: 20px auto;
+  width: 80%;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+}
+
+/* Header Styling */
+.portfolio-header {
+  display: flex;
+  background-color: #f4f4f4;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.portfolio-header > div {
+  flex: 1;
+  text-align: center;
+}
+
+/* Row Styling */
+.portfolio-row {
+  display: flex;
+  padding: 10px;
+  border-top: 1px solid #ddd;
+  text-align: center;
+}
+
+.portfolio-row > div {
+  flex: 1;
+}
+
+/* Alternating Row Backgrounds */
+.portfolio-row:nth-child(odd) {
+  background-color: #f9f9f9;
+}
+
+.portfolio-row:nth-child(even) {
+  background-color: #ffffff;
+}
+
+/* Hover Effect for Rows */
+.portfolio-row:hover {
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+/* Profit Color */
+.portfolio-profit {
+  color: green;
+}
+
+.portfolio-profit.negative {
+  color: red;
+}

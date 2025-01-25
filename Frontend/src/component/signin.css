@@ -1,0 +1,146 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f3f4f6; /* Light gray background for a softer look */
+  color: #333; /* Standard text color */
+}
+
+/* Container for the Sign In Component */
+.signin {
+  max-width: 400px;
+  margin: 50px auto;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Stronger shadow for better elevation */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.signin:hover {
+  transform: translateY(-5px); /* Subtle hover lift */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* Sign In Title */
+.signin h1 {
+  text-align: center;
+  color: #2c3e50; /* Slightly darker for better contrast */
+  font-size: 26px;
+  margin-bottom: 25px;
+  font-weight: bold;
+}
+
+/* Label Styling */
+.signin label {
+  display: block;
+  font-size: 15px;
+  color: #444444;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+/* Input Fields */
+.signin input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #dcdfe6;
+  border-radius: 6px;
+  font-size: 15px;
+  background-color: #fafafa;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.signin input:focus {
+  outline: none;
+  border-color: #3498db; /* Blue highlight */
+  box-shadow: 0 0 6px rgba(52, 152, 219, 0.5); /* Blue glow */
+}
+
+/* Sign In Button */
+.signin-button button {
+  width: 100%;
+  padding: 12px;
+  background-color: #3498db;
+  border: none;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.signin-button button:hover {
+  background-color: #2980b9; /* Slightly darker blue */
+  transform: translateY(-2px); /* Lift effect */
+}
+
+.signin-button button:active {
+  background-color: #1f6fa5;
+  transform: translateY(0); /* Reset lift */
+}
+
+/* Sign Up Section */
+.signin-signup {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.signin-signup p {
+  margin: 0;
+  font-size: 14px;
+  color: #7f8c8d; /* Muted gray */
+}
+
+.signin-signup button {
+  background: none;
+  border: none;
+  color: #3498db;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.signin-signup button:hover {
+  color: #2980b9;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 600px) {
+  .signin {
+    margin: 20px;
+    padding: 25px;
+  }
+
+  .signin h1 {
+    font-size: 22px;
+  }
+
+  .signin input,
+  .signin-button button {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .signin-signup p,
+  .signin-signup button {
+    font-size: 13px;
+  }
+}
+
+/* Subtle Animations */
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 6px rgba(52, 152, 219, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 10px rgba(52, 152, 219, 0.6);
+  }
+  100% {
+    box-shadow: 0 0 6px rgba(52, 152, 219, 0.3);
+  }
+}
