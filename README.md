@@ -4,10 +4,11 @@ This is a simple Portfolio Tracker application built using React.js, Express.js,
 
 ## Features
 
-- **Registration/Sign-In**: Secure user authentication.
-- **Live Stock Updates**: Automatically fetches and updates stock data every 5 minutes using the CoinMarketCap API.
-- **Portfolio Management**: Add, delete, and update stock entries.
-- **Profit and Loss Overview**: View your financial performance in your profile.
+- **Registration/Signup**: Secure user authentication for accessing the application.  
+- **Live Stock Updates**: Automatically fetches and updates stock data every 5 minutes.  
+- **Portfolio Management**: Manage your portfolio by adding, deleting, or updating stock entries.  
+- **Profit and Loss Analysis**: View your financial performance, including gains and losses, in your profile.  
+- **Search and Sort Stocks**: Easily sort stocks by price, volume, or name and search for specific stocks.  
 
 ## Deployment
 
@@ -49,7 +50,7 @@ In the `frontend` directory, create a `.env` file with the following content:
 VITE_BACKEND_URL=<backend-server-url>
 ```
 
-Replace `<backend-server-url>` with the URL where your backend server is running (e.g., `http://localhost:5000`).
+Replace `<backend-server-url>` with the URL where your backend server is running (e.g., `http://localhost:5173`).
 
 #### Backend
 
