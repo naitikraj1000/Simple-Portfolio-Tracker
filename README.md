@@ -9,6 +9,16 @@ This is a simple Portfolio Tracker application built using React.js, Express.js,
 - **Portfolio Management**: Add, delete, and update stock entries.
 - **Profit and Loss Overview**: View your financial performance in your profile.
 
+## Deployment
+
+The application is deployed on [Railway](https://railway.app). You can access it using the following link:
+
+[Portfolio Tracker Deployment](https://simple-portfolio-tracker-production-9067.up.railway.app/)
+
+### Disclaimer
+
+**Please note:** Since the application is hosted on Railway, there may be a delay in response times and functionality due to the platform's cold start behavior.
+
 ## Technologies Used
 
 - **Frontend**: React.js  
@@ -93,16 +103,6 @@ Replace `<your-coinmarketcap-api-key>` with your API key for CoinMarketCap and `
 ## Stock Updates
 
 Stock updates are fetched every 5 minutes using the [CoinMarketCap API](https://coinmarketcap.com/api/). Ensure that you have a valid API key configured in the backend `.env` file under the `API_KEY` variable.
-
-## Deployment
-
-The application is deployed on [Railway](https://railway.app). You can access it using the following link:
-
-[Portfolio Tracker Deployment](https://simple-portfolio-tracker-production-9067.up.railway.app/)
-
-### Disclaimer
-
-**Please note:** Since the application is hosted on Railway, there may be a delay in response times and functionality due to the platform's cold start behavior.
 
 ## Troubleshooting
 
